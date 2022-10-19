@@ -22,12 +22,12 @@ __decorate([
         nullable: false,
         default: Date.now(),
     }),
-    (0, typeorm_1.CreateDateColumn)({ type: 'timestamp' }),
+    (0, typeorm_1.CreateDateColumn)({ type: "timestamp" }),
     __metadata("design:type", String)
 ], CommonFields.prototype, "createdAt", void 0);
 __decorate([
     (0, typeorm_1.Column)(),
-    (0, typeorm_1.DeleteDateColumn)({ type: 'timestamp' }),
+    (0, typeorm_1.DeleteDateColumn)({ type: "timestamp" }),
     __metadata("design:type", String)
 ], CommonFields.prototype, "deletedAt", void 0);
 exports.CommonFields = CommonFields;

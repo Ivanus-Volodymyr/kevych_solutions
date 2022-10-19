@@ -12,13 +12,11 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.User = void 0;
 const typeorm_1 = require("typeorm");
 const commonFields_1 = require("./commonFields");
-const posts_1 = require("./posts");
-const comments_1 = require("./comments");
 let User = class User extends commonFields_1.CommonFields {
 };
 __decorate([
     (0, typeorm_1.Column)({
-        type: 'varchar',
+        type: "varchar",
         width: 255,
         nullable: false,
     }),
@@ -26,7 +24,7 @@ __decorate([
 ], User.prototype, "firstName", void 0);
 __decorate([
     (0, typeorm_1.Column)({
-        type: 'varchar',
+        type: "varchar",
         width: 255,
         nullable: false,
     }),
@@ -34,14 +32,14 @@ __decorate([
 ], User.prototype, "lastName", void 0);
 __decorate([
     (0, typeorm_1.Column)({
-        type: 'int',
+        type: "int",
         default: 0,
     }),
     __metadata("design:type", Number)
 ], User.prototype, "age", void 0);
 __decorate([
     (0, typeorm_1.Column)({
-        type: 'varchar',
+        type: "varchar",
         width: 255,
         nullable: false,
         unique: true,
@@ -50,7 +48,7 @@ __decorate([
 ], User.prototype, "phone", void 0);
 __decorate([
     (0, typeorm_1.Column)({
-        type: 'varchar',
+        type: "varchar",
         width: 255,
         nullable: false,
         unique: true,
@@ -59,22 +57,14 @@ __decorate([
 ], User.prototype, "email", void 0);
 __decorate([
     (0, typeorm_1.Column)({
-        type: 'varchar',
+        type: "varchar",
         width: 255,
         nullable: false,
     }),
     __metadata("design:type", String)
 ], User.prototype, "password", void 0);
-__decorate([
-    (0, typeorm_1.OneToMany)(() => posts_1.Post, (post) => post.user),
-    __metadata("design:type", Array)
-], User.prototype, "posts", void 0);
-__decorate([
-    (0, typeorm_1.OneToMany)(() => comments_1.Comment, (comment) => comment.user),
-    __metadata("design:type", Array)
-], User.prototype, "comments", void 0);
 User = __decorate([
-    (0, typeorm_1.Entity)('Users', { database: 'root' })
+    (0, typeorm_1.Entity)("Users", { database: "root" })
 ], User);
 exports.User = User;
 //# sourceMappingURL=user.js.map
