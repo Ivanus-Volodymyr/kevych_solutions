@@ -12,7 +12,7 @@ app.use(express.urlencoded());
 
 app.use(
     cors({
-        origin: "http://localhost:63342",
+        origin: "http://localhost:3000",
         optionsSuccessStatus: 200, // For legacy browser support
         methods: "GET, PUT, POST, DELETE",
         credentials: true,
