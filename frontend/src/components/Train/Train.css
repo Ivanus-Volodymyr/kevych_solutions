@@ -1,0 +1,16 @@
+.train {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    width: 99%;
+    height: 50px;
+    background: bisque;
+    border: 2px blue solid;
+    border-radius: 20px;
+    margin: 5px;
+}
+
+.info {
+    margin: 5px;
+}
